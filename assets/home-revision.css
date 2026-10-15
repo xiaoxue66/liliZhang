@@ -1,0 +1,96 @@
+/* Compact side-by-side introduction and a separate full-background study. */
+body[data-concept=a] .hero{display:grid;grid-template-columns:1.05fr 1fr;gap:42px;align-items:center;margin:30px 0 34px}
+body[data-concept=a] .hero-copy{display:block;grid-column:1;grid-row:1;align-self:center;padding:0}
+body[data-concept=a] .hero-copy>.eyebrow{max-width:none;font-size:10px;line-height:1.7}
+body[data-concept=a] .hero h1{font-size:29px;margin:12px 0 6px}
+body[data-concept=a] .identity{font-size:16px}
+body[data-concept=a] .affiliation{font-size:12px;line-height:1.65;margin-top:10px}
+body[data-concept=a] .bio,body[data-concept=immersive] .bio{max-width:none;font-size:15px;line-height:1.7;margin-top:18px}
+body[data-concept=a] .bio p,body[data-concept=immersive] .bio p{margin:0 0 12px}
+body[data-concept=a] .hero-links{font-size:12px;margin-top:16px}
+body[data-concept=a] .featured-media{grid-column:2;grid-row:1;align-self:stretch;display:flex;flex-direction:column;margin:0}
+body[data-concept=a] .media-stage{flex:1;min-height:360px;aspect-ratio:auto;border:0}
+body[data-concept=a] .banner-source{object-position:64% center}
+body[data-concept=a] .featured-media figcaption{font-size:9px}
+/* Full-width first screen; the rest of the page keeps its white paper background. */
+body[data-concept=immersive] .hero{display:block;isolation:isolate;width:var(--site-width,100%);margin:0 0 32px;left:50%;transform:translateX(-50%);min-height:max(680px,var(--hero-screen,calc(100svh - 140px)));padding:55px max(40px,calc((var(--site-width,100vw) - 1120px)/2)) 70px;overflow:hidden}
+body[data-concept=immersive] .featured-media{position:absolute;inset:0;z-index:-2;margin:0;width:100%;height:100%}
+body[data-concept=immersive] .media-stage{position:absolute;inset:0;aspect-ratio:auto;border:0;background:#fff}
+body[data-concept=immersive] .banner-source{object-position:72% center}
+body[data-concept=immersive] .featured-media:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(255,255,255,.97) 0%,rgba(255,255,255,.93) 40%,rgba(255,255,255,.76) 57%,rgba(255,255,255,.12) 82%);pointer-events:none}
+body[data-concept=immersive] .featured-media figcaption{position:absolute;left:max(40px,calc((var(--site-width,100vw) - 1120px)/2));right:max(40px,calc((var(--site-width,100vw) - 1120px)/2));bottom:22px;z-index:1;font-size:9px;color:#39444c;text-shadow:0 1px 5px white}
+body[data-concept=immersive] .featured-media figcaption button{color:#24333e;background:#ffffffd9;padding:5px 9px;border:1px solid #ffffff80}
+body[data-concept=immersive] .hero-copy{position:relative;width:min(590px,58%);padding:0}
+body[data-concept=immersive] .hero h1{font-size:30px;margin:12px 0 7px}
+body[data-concept=immersive] .eyebrow{font-size:10px;line-height:1.7;color:#3d5360}
+body[data-concept=immersive] .identity{font-size:16px;color:#304c5d}
+body[data-concept=immersive] .affiliation{font-size:12px;line-height:1.65;margin-top:10px;color:#4b5d68}
+body[data-concept=immersive] .hero-links{font-size:12px;margin-top:18px}
+@media(max-width:1100px){body[data-concept=a] .hero{gap:30px;grid-template-columns:1.1fr 1fr}body[data-concept=a] .bio,body[data-concept=immersive] .bio{font-size:14px;line-height:1.7}body[data-concept=immersive] .hero-copy{width:62%}}
+@media(max-width:760px){
+ body[data-concept=a] .hero{display:flex;flex-direction:column;gap:24px;margin-top:25px}
+ body[data-concept=a] .hero-copy{order:0;width:100%}
+ body[data-concept=a] .featured-media{order:1;width:100%;margin:0;display:block}
+ body[data-concept=a] .media-stage{aspect-ratio:1.75;min-height:0}
+ body[data-concept=a] .hero h1,body[data-concept=immersive] .hero h1{font-size:27px}
+ body[data-concept=a] .bio,body[data-concept=immersive] .bio{font-size:14px;line-height:1.8}
+ body[data-concept=immersive] .hero{min-height:var(--hero-screen,calc(100svh - 180px));padding:30px 22px 70px;margin-bottom:22px}
+ body[data-concept=immersive] .hero-copy{width:100%;max-width:600px}
+ body[data-concept=immersive] .featured-media:after{background:linear-gradient(90deg,rgba(255,255,255,.94),rgba(255,255,255,.83))}
+ body[data-concept=immersive] .featured-media figcaption{left:22px;right:22px;bottom:16px;font-size:8px}
+}
+
+/* Chosen homepage: low panoramic header, identity left and statement right. */
+body[data-concept=immersive] .hero{min-height:0;padding-top:36px;padding-bottom:56px;margin-bottom:26px}
+body[data-concept=immersive] .featured-media:after{background:rgba(255,255,255,.15)}
+body[data-concept=immersive] .banner-source{object-position:center 68%}
+body[data-concept=immersive] .hero-copy{display:grid;grid-template-columns:minmax(270px,.8fr) minmax(0,1.6fr);gap:50px;width:100%;align-items:start}
+body[data-concept=immersive] .hero-profile{padding:17px 0;text-shadow:0 1px 12px #ffffffed}
+body[data-concept=immersive] .hero-profile .eyebrow{max-width:340px;line-height:1.8;color:#344b58}
+body[data-concept=immersive] .hero h1{font-size:29px;margin:20px 0 10px}
+body[data-concept=immersive] .hero-statement{padding:18px 22px;background:rgba(255,255,255,.62)}
+body[data-concept=immersive] .bio{font-size:14px;line-height:1.7;margin:0;color:#24313b}
+body[data-concept=immersive] .bio p{margin:0 0 11px}
+body[data-concept=immersive] .bio p:last-child{margin:0}
+body[data-concept=immersive] .hero-links{margin-top:24px;font-size:11px;gap:18px;text-shadow:none}
+body[data-concept=immersive] .featured-media figcaption{bottom:15px}
+@media(max-width:1100px){body[data-concept=immersive] .hero-copy{grid-template-columns:minmax(245px,.8fr) minmax(0,1.5fr);gap:30px}body[data-concept=immersive] .bio{font-size:13.5px}body[data-concept=immersive] .hero h1{font-size:27px}}
+@media(max-width:760px){
+ body[data-concept=immersive] .hero{padding:25px 20px 53px}
+ body[data-concept=immersive] .hero-copy{grid-template-columns:1fr;gap:21px}
+ body[data-concept=immersive] .hero-profile{padding:0}
+ body[data-concept=immersive] .hero h1{margin:12px 0 8px}
+ body[data-concept=immersive] .hero-links{margin-top:16px}
+ body[data-concept=immersive] .hero-statement{padding:16px;background:rgba(255,255,255,.68)}
+ body[data-concept=immersive] .bio{font-size:13px;line-height:1.8}
+ body[data-concept=immersive] .featured-media:after{background:rgba(255,255,255,.22)}
+}
+
+/* Softer open header, transparent text and a borderless fade into the works. */
+body[data-concept=immersive] .site-header{border-bottom:0}
+body[data-concept=immersive] .hero{padding-top:64px;padding-bottom:104px;min-height:470px;margin-bottom:38px}
+body[data-concept=immersive] .hero-copy{gap:68px;align-items:start}
+body[data-concept=immersive] .hero-profile{padding:12px 0}
+body[data-concept=immersive] .hero-statement{background:transparent;padding:12px 0}
+body[data-concept=immersive] .bio{line-height:1.85;text-shadow:0 1px 7px #ffffff66}
+body[data-concept=immersive] .bio p{margin-bottom:15px}
+body[data-concept=immersive] .bio p:last-child{margin-bottom:0}
+body[data-concept=immersive] .featured-media:after{background:linear-gradient(180deg,#fff 0%,rgba(255,255,255,.39) 13%,rgba(255,255,255,.42) 62%,rgba(255,255,255,.76) 86%,#fff 100%)}
+body[data-concept=immersive] .featured-media figcaption{bottom:42px}
+body[data-concept=immersive] .works-section{border-top:0;padding-top:20px}
+@media(max-width:1100px){body[data-concept=immersive] .hero-copy{gap:38px}}
+@media(max-width:760px){
+ body[data-concept=immersive] .hero{padding:38px 22px 88px;margin-bottom:24px;min-height:0}
+ body[data-concept=immersive] .hero-copy{gap:30px}
+ body[data-concept=immersive] .hero-profile,body[data-concept=immersive] .hero-statement{padding:0;background:transparent}
+ body[data-concept=immersive] .bio{line-height:1.85}
+ body[data-concept=immersive] .featured-media:after{background:linear-gradient(180deg,#fff 0%,rgba(255,255,255,.62) 12%,rgba(255,255,255,.67) 72%,#fff 100%)}
+ body[data-concept=immersive] .featured-media figcaption{bottom:28px}
+ body[data-concept=immersive] .works-section{padding-top:18px}
+}
+/* A landscape poster remains visible while the animated image loads. */
+body[data-concept=immersive] .media-stage{background:#fff url(jin-se-landscape-start.jpg) center/cover no-repeat}
+@media(max-width:760px){
+ body[data-concept=immersive] .banner-source{object-position:35% center}
+ body[data-concept=immersive] .media-stage{background-position:35% center}
+}

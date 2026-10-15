@@ -1,0 +1,274 @@
+.site-header nav a[aria-current=page]{color:var(--accent);border-bottom:1px solid var(--accent)}
+.detail-main{padding:35px 0 55px;min-height:65vh}
+.page-heading{margin:12px 0 38px;max-width:760px}
+.page-heading h1,.project-heading h1{font-size:36px;line-height:1.35;letter-spacing:-.5px;margin:15px 0}
+.page-intro{font-size:16px;line-height:1.9;color:var(--muted);max-width:700px}
+.reading-column{max-width:800px;margin:auto}
+.article-text{max-width:720px;margin:32px auto 42px}
+.article-text h2,.article-gallery-section h2,.article-video h2,.publication-section>h2{font-size:23px;line-height:1.5;margin-bottom:18px;letter-spacing:-.2px}
+.article-text p{font-size:16px;line-height:1.95;margin:0 0 17px}
+.article-text .affiliation{font-size:13px;margin-bottom:25px}
+.article-text .identity{font-size:17px;margin-bottom:10px}
+.article-list{padding-left:21px;font-size:15px;line-height:1.95}
+.article-list li{margin:10px 0}
+.about-layout{display:grid;grid-template-columns:260px minmax(0,1fr);gap:55px;max-width:1000px;margin:auto}
+.about-portrait img{width:260px;height:390px;object-fit:cover}
+.about-layout .article-text{margin:0}
+.about-name{font-size:25px!important;margin-bottom:9px!important}
+.about-name span{font-size:19px;margin-left:12px;font-weight:400}
+.page-related{display:flex;gap:25px;margin-top:30px;font-size:14px;color:var(--accent)}
+.project-article{max-width:1000px;margin:auto}
+.breadcrumb{font-size:13px;color:var(--muted)}
+.project-heading{max-width:760px;margin:35px auto 32px}
+.project-heading .eyebrow{font-size:12px}
+.article-lead{font-size:19px;line-height:1.8;margin-top:24px}
+.project-credit{font-size:13px;color:var(--muted);margin-top:17px}
+.article-image{margin:0;min-width:0}
+.article-image img{width:100%;height:auto;object-fit:contain}
+.article-image figcaption{font-size:12px;line-height:1.7;color:var(--muted);margin-top:12px}
+.project-cover{max-width:860px;margin:0 auto 40px}
+.project-cover img{max-height:550px;object-fit:contain}
+.article-gallery-section,.article-video{margin:43px auto;max-width:860px}
+.article-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 23px;align-items:start}
+.article-gallery.single{grid-template-columns:1fr}
+.article-gallery img{max-height:560px;object-fit:contain}
+.pending-material{padding:20px 0;border-top:1px dashed #cbd4de;border-bottom:1px dashed #cbd4de}
+.pending-material p{font-size:14px;color:var(--muted)}
+.video-frame{position:relative;aspect-ratio:16/9;min-height:200px;background:#edf1f5}
+.video-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.video-pending{aspect-ratio:16/9;min-height:200px;background:#f2f5f8;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:12px;border:1px solid #dfe6ed;color:#6d7e8d}
+.video-pending>span{font-size:35px;line-height:1}
+.video-pending>p{font-size:15px}.video-pending>small{font-size:12px}
+.video-caption{font-size:13px;color:var(--accent);margin-top:12px}
+.project-next{border-top:1px solid var(--line);padding-top:22px;display:flex;justify-content:space-between;gap:24px;font-size:13px;color:var(--accent);margin-top:50px}
+.academic-note{color:var(--muted);font-size:13px!important}
+.research-links{list-style:none;padding:0}.research-links li{padding:15px 0;border-top:1px solid var(--line);font-size:15px}.research-links a{color:var(--accent)}.research-links p{font-size:12px;color:var(--muted);margin:5px 0 0}
+.publication-section{margin-bottom:45px}.publication-section>ul{list-style:none;padding:0}.publication-entry{display:grid;grid-template-columns:60px 1fr;gap:23px;padding:23px 0;border-top:1px solid var(--line)}.publication-entry h3{font-size:17px;line-height:1.85;font-weight:400}.publication-venue{font-size:13px;line-height:1.9}.publication-type{font-size:12px;color:var(--accent);margin-top:8px}
+.contact-page-layout{display:grid;grid-template-columns:220px minmax(0,1fr);gap:60px;max-width:900px;margin:auto}
+.contact-page-layout>.article-image img{width:220px;height:330px;object-fit:cover}
+.contact-invitation{font-size:16px;line-height:1.9;color:var(--muted)}
+.contact-page-layout .contact-links{gap:18px 25px;margin-top:24px}
+.contact-research{margin-top:40px;padding-top:25px;border-top:1px solid var(--line)}
+.contact-research h2{font-size:22px}.contact-research p{font-size:14px;line-height:1.9;color:var(--muted);margin:15px 0}.contact-research>a{font-size:13px;color:var(--accent)}
+@media(max-width:900px){.about-layout{grid-template-columns:210px 1fr;gap:35px}.about-portrait img{width:210px;height:315px}.contact-page-layout{grid-template-columns:180px 1fr;gap:35px}.contact-page-layout>.article-image img{width:180px;height:270px}}
+@media(max-width:760px){.detail-main{padding:27px 0 35px}.page-heading h1,.project-heading h1{font-size:29px;line-height:1.4}.page-heading{margin-top:0;margin-bottom:28px}.page-heading .eyebrow{font-size:10px;line-height:1.9}.page-intro{font-size:14px}.article-text p{font-size:15px}.article-lead{font-size:17px}.article-text h2,.article-gallery-section h2,.article-video h2{font-size:21px}.project-heading{margin:26px 0}.article-gallery{grid-template-columns:1fr;gap:24px}.article-gallery-section,.article-video{margin:32px 0}.project-next{flex-direction:column;gap:16px}.publication-entry{grid-template-columns:43px 1fr;gap:14px}.publication-entry h3{font-size:15px}.publication-venue{font-size:12px}.about-layout,.contact-page-layout{grid-template-columns:1fr;gap:30px}.about-portrait img{width:180px;height:270px}.contact-page-layout>.article-image img{width:180px;height:270px}.about-layout .article-text{margin:0}.contact-page-layout .profile-email{font-size:17px}.contact-invitation{font-size:15px}}
+/* Keep the minimum video height without expanding the mobile page width. */
+.video-frame,.video-pending{width:100%}
+
+/* Complete records, with film years separated from unspecified screening dates. */
+.recognition-content{max-width:1000px;margin:auto}
+.recognition-section,.teaching-section{margin:30px 0 42px}
+.recognition-section>h2,.teaching-section>h2{font-size:23px;line-height:1.5;margin-bottom:18px}
+.section-date{font-size:13px;font-weight:400;color:var(--muted);margin-left:12px;white-space:nowrap}
+.section-intro{font-size:14px;line-height:1.85;margin:0 0 20px;color:var(--muted)}
+.section-intro a{color:var(--accent)}
+.recognition-table-wrap{max-width:100%}
+.recognition-table{border-collapse:collapse;width:100%;table-layout:fixed;text-align:left;font-size:14px;line-height:1.8}
+.recognition-table th{font-size:13px;font-weight:600;color:var(--muted);padding:12px 14px;border-bottom:1px solid var(--line)}
+.recognition-table td{vertical-align:top;padding:13px 14px;border-bottom:1px solid var(--line);overflow-wrap:anywhere}
+.recognition-table th:first-child{width:52%}.recognition-table th:nth-child(2){width:25%}.recognition-table th:nth-child(3){width:23%}
+.recognition-table td:last-child{color:var(--accent)}
+.record-list{list-style:none;padding:0;margin:0}
+.record-list>li{display:grid;grid-template-columns:65px minmax(0,1fr);gap:20px;border-top:1px solid var(--line);padding:15px 0}
+.record-year{font-size:12px;color:var(--muted);line-height:1.85}
+.record-list h3{font-size:15px;line-height:1.65;font-weight:600}
+.record-list p{font-size:14px;line-height:1.85;color:var(--muted);margin-top:4px}
+.workshop-entry{border-top:1px solid var(--line);padding:21px 0}
+.workshop-entry h3{font-size:19px;line-height:1.5;margin:5px 0 9px}
+.workshop-role{font-size:13px;color:var(--muted)}
+.workshop-entry .article-list{margin-top:15px}
+.award-group{margin:25px 0 30px}
+.award-group>h3{font-size:18px;line-height:1.5;margin-bottom:17px}
+@media(max-width:600px){
+ .recognition-section>h2,.teaching-section>h2{font-size:21px}
+ .recognition-table,.recognition-table tbody{display:block;width:100%}
+ .recognition-table thead{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}
+ .recognition-table tr{display:block;border-top:1px solid var(--line);padding:13px 0}
+ .recognition-table td{display:block;border:0;padding:3px 0;font-size:13px}
+ .recognition-table td:first-child{font-weight:600}
+ .recognition-table td:not(:first-child)::before{content:attr(data-label) ': ';font-size:12px;color:var(--muted);font-weight:400}
+ .record-list>li{grid-template-columns:45px minmax(0,1fr);gap:14px;padding:14px 0}
+ .record-list p{font-size:13px}
+}
+
+/* Compact publication citations, with clear groups and a narrow year column. */
+body[data-page=publications] .page-heading{margin-bottom:24px}
+body[data-page=publications] .reading-column{max-width:960px;margin-left:0}
+.publication-section{margin-bottom:28px}
+.publication-section>h2{margin:0 0 10px;font-size:22px}
+.publication-section>ul{margin:0}
+.publication-entry{grid-template-columns:52px minmax(0,1fr);gap:16px;padding:12px 0}
+.publication-entry h3{font-size:17px;line-height:1.55;font-weight:600;margin:0 0 3px}
+.publication-entry .publication-year{font-size:14px;line-height:1.75;padding-top:1px}
+.publication-authors,.publication-venue,.publication-note{font-size:14px;line-height:1.6;margin:2px 0;color:var(--muted)}
+.publication-type{font-size:13px;margin:0;color:var(--accent)}
+.publication-note{font-size:13px}
+.native-video-frame{width:100%;background:#111}
+.native-video-frame video{display:block;width:100%;max-height:600px;aspect-ratio:16/9;object-fit:contain}
+@media(max-width:760px){.publication-entry{grid-template-columns:40px minmax(0,1fr);gap:10px;padding:12px 0}.publication-entry h3{font-size:16px}.publication-authors,.publication-venue{font-size:13px}.publication-section>h2{font-size:21px}}
+
+/* Project pages: compact reading rhythm, smaller type and tighter image groups. */
+body:is([data-page=work],[data-page=project]) .detail-main{padding:25px 0 38px}
+body:is([data-page=work],[data-page=project]) .project-article{max-width:960px}
+body:is([data-page=work],[data-page=project]) .project-heading{max-width:780px;margin:22px auto 24px}
+body:is([data-page=work],[data-page=project]) .project-heading h1{font-size:29px;line-height:1.3;margin:10px 0}
+body:is([data-page=work],[data-page=project]) .article-lead{font-size:16px;line-height:1.65;margin:12px 0 0}
+body:is([data-page=work],[data-page=project]) .project-credit{font-size:12px;line-height:1.6;margin-top:10px}
+body:is([data-page=work],[data-page=project]) .article-text{max-width:780px;margin:23px auto}
+body:is([data-page=work],[data-page=project]) .article-text h2,body:is([data-page=work],[data-page=project]) .article-gallery-section h2,body:is([data-page=work],[data-page=project]) .article-video h2{font-size:20px;line-height:1.4;margin:0 0 10px}
+body:is([data-page=work],[data-page=project]) .article-text p{font-size:15px;line-height:1.75;margin:0 0 11px}
+body:is([data-page=work],[data-page=project]) .article-list{font-size:14px;line-height:1.75;margin:8px 0}
+body:is([data-page=work],[data-page=project]) .article-list li{margin:5px 0}
+body:is([data-page=work],[data-page=project]) .project-cover{max-width:780px;margin:0 auto 24px}
+body:is([data-page=work],[data-page=project]) .project-cover img{max-height:360px}
+body:is([data-page=work],[data-page=project]) .article-gallery-section,body:is([data-page=work],[data-page=project]) .article-video{max-width:780px;margin:25px auto}
+body:is([data-page=work],[data-page=project]) .article-gallery{gap:16px 18px}
+body:is([data-page=work],[data-page=project]) .article-gallery img{max-height:410px}
+body:is([data-page=work],[data-page=project]) .article-image figcaption{font-size:11px;line-height:1.6;margin-top:6px}
+body:is([data-page=work],[data-page=project]) .project-next{margin-top:28px;padding-top:16px;font-size:12px}
+.video-link-pending{position:relative;aspect-ratio:16/9;max-height:370px;background:#f3f5f7;overflow:hidden;display:grid;place-items:center}
+.video-link-pending>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.42}
+.video-link-pending>div{position:relative;background:#ffffffeb;padding:14px 22px;text-align:center;box-shadow:0 2px 20px #26313d0a}
+.video-link-pending span{font-size:26px;line-height:1.2;color:#687b89}
+.video-link-pending p{font-size:14px;margin:5px 0 3px}.video-link-pending small{font-size:11px;color:var(--muted)}
+.category-nav{display:flex;flex-wrap:wrap;gap:11px 24px;margin-bottom:28px;border-bottom:1px solid var(--line);padding-bottom:16px}
+.category-nav a{font-size:14px;line-height:1.7;color:var(--muted);padding:0 0 4px;border-bottom:2px solid transparent}
+.category-nav a[aria-current=page]{color:var(--ink);border-color:var(--ink)}
+.category-nav a span{font-size:11px;opacity:.7;margin-left:4px}
+.work-category-section{margin:0 0 35px}
+.category-heading{display:flex;gap:20px;align-items:baseline;justify-content:space-between;margin-bottom:12px}
+.category-heading h2{font-size:21px;line-height:1.4}.category-heading>span{font-size:12px;color:var(--muted)}
+.category-work-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0}
+.category-work-grid .work-window{aspect-ratio:1.5}
+@media(max-width:760px){
+ body:is([data-page=work],[data-page=project]) .project-heading h1{font-size:25px}
+ body:is([data-page=work],[data-page=project]) .article-lead{font-size:15px}
+ body:is([data-page=work],[data-page=project]) .article-text p{font-size:14px;line-height:1.8}
+ body:is([data-page=work],[data-page=project]) .article-gallery{grid-template-columns:1fr;gap:17px}
+ body:is([data-page=work],[data-page=project]) .article-text h2,body:is([data-page=work],[data-page=project]) .article-gallery-section h2,body:is([data-page=work],[data-page=project]) .article-video h2{font-size:19px}
+ .category-nav{gap:10px 17px;margin-bottom:23px}.category-nav a{font-size:13px}
+ .category-work-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.category-work-grid .work-window{aspect-ratio:1.05}
+ .category-heading h2{font-size:19px}
+ .video-link-pending>div{padding:11px 14px}.video-link-pending p{font-size:13px}
+}
+
+/* Smaller, denser project text and restrained publication citations. */
+body:is([data-page=work],[data-page=project]) .project-heading{margin:18px auto 20px}
+body:is([data-page=work],[data-page=project]) .project-heading h1{font-size:26px;line-height:1.3;margin:8px 0}
+body:is([data-page=work],[data-page=project]) .project-heading .eyebrow{font-size:10px}
+body:is([data-page=work],[data-page=project]) .article-lead{font-size:14px;line-height:1.65;margin-top:10px}
+body:is([data-page=work],[data-page=project]) .article-text{margin:18px auto}
+body:is([data-page=work],[data-page=project]) .article-text p{font-size:13.5px;line-height:1.7;margin-bottom:9px}
+body:is([data-page=work],[data-page=project]) .article-text h2,body:is([data-page=work],[data-page=project]) .article-gallery-section h2,body:is([data-page=work],[data-page=project]) .article-video h2{font-size:18px;line-height:1.4;margin-bottom:8px}
+body:is([data-page=work],[data-page=project]) .article-list{font-size:13px;line-height:1.7}
+body:is([data-page=work],[data-page=project]) .article-list li{margin:4px 0}
+body:is([data-page=work],[data-page=project]) .article-gallery-section,body:is([data-page=work],[data-page=project]) .article-video{margin:20px auto}
+body:is([data-page=work],[data-page=project]) .article-gallery{gap:13px 16px}
+body:is([data-page=work],[data-page=project]) .article-gallery img{max-height:360px}
+body[data-page=publications] .page-heading h1{font-size:30px;font-weight:500;letter-spacing:-.3px}
+body[data-page=publications] .reading-column{max-width:920px}
+body[data-page=publications] .publication-section{margin-bottom:24px}
+body[data-page=publications] .publication-section>h2{font-size:18px;font-weight:500;margin-bottom:9px}
+body[data-page=publications] .publication-entry{grid-template-columns:44px minmax(0,1fr);gap:13px;padding:10px 0;border-color:#e7ebee}
+body[data-page=publications] .publication-entry h3{font-size:15px;font-weight:400;line-height:1.55;margin-bottom:3px}
+body[data-page=publications] .publication-year{font-size:12px;font-weight:400;line-height:1.8}
+body[data-page=publications] .publication-authors,body[data-page=publications] .publication-venue{font-size:12.5px;line-height:1.6;margin:2px 0}
+body[data-page=publications] .publication-type,body[data-page=publications] .publication-note{font-size:12px}
+body[data-page=works] .page-heading{margin-bottom:22px}
+body[data-page=works] .page-heading h1{font-size:30px}
+body[data-page=works] .category-nav{margin-bottom:22px;padding-bottom:12px;gap:10px 22px}
+body[data-page=works] .category-nav a{font-size:13px}
+body[data-page=works] .category-work-grid{grid-template-columns:repeat(5,minmax(0,1fr));gap:0}
+body[data-page=works] .category-work-grid .work-window{aspect-ratio:1.45}
+body[data-page=works] .category-heading h2{font-size:18px}
+body[data-page=works] .category-work-grid .window-title{font-size:14px}
+body[data-page=works] .category-work-grid .window-description{font-size:11px;line-height:1.5}
+@media(max-width:1000px){body[data-page=works] .category-work-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media(max-width:760px){
+ body:is([data-page=work],[data-page=project]) .project-heading h1{font-size:23px}
+ body:is([data-page=work],[data-page=project]) .article-text p{font-size:13px;line-height:1.75}
+ body:is([data-page=work],[data-page=project]) .article-lead{font-size:13.5px}
+ body:is([data-page=work],[data-page=project]) .article-text h2,body:is([data-page=work],[data-page=project]) .article-gallery-section h2,body:is([data-page=work],[data-page=project]) .article-video h2{font-size:17px}
+ body[data-page=works] .category-work-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ body[data-page=works] .category-work-grid .work-window{aspect-ratio:1.3}
+ body[data-page=publications] .publication-entry h3{font-size:14px}
+ body[data-page=publications] .publication-entry{grid-template-columns:36px minmax(0,1fr);gap:9px}
+}
+
+.article-gallery.stacked{grid-template-columns:1fr;gap:22px}
+body:is([data-page=work],[data-page=project]) .article-gallery.stacked img{max-height:none}
+
+/* Art detail pages use an unhurried single column, without oversized image rows. */
+body:is([data-page=work],[data-page=project]) .article-gallery{grid-template-columns:minmax(0,1fr);max-width:640px;margin-inline:auto;gap:22px}
+body:is([data-page=work],[data-page=project]) .article-gallery .article-image{width:100%;margin-inline:auto}
+body:is([data-page=work],[data-page=project]) .article-gallery .portrait-image{max-width:400px}
+body:is([data-page=work],[data-page=project]) .article-gallery img{max-height:none}
+body:is([data-page=work],[data-page=project]) .article-gallery.wide{max-width:780px}
+body:is([data-page=work],[data-page=project]) .article-gallery figcaption{line-height:1.55;text-align:center}
+/* A compact academic profile, organised around research and evidenced capabilities. */
+body[data-page=research] .detail-main{max-width:1000px;margin:auto;padding:26px 0 40px}
+body[data-page=research] .page-heading{margin:10px 0 25px;max-width:850px}
+body[data-page=research] .page-heading h1{font-size:27px;line-height:1.3;margin:11px 0}
+body[data-page=research] .page-intro{font-size:13.5px;line-height:1.75;max-width:820px}
+.research-profile{font-size:13.5px;line-height:1.7}
+.research-section{padding:20px 0;border-top:1px solid var(--line)}
+.research-profile h2{font-size:18px;line-height:1.4;font-weight:600;margin:0 0 14px}
+.research-profile h3{font-size:14px;line-height:1.55;font-weight:500;margin:0 0 5px}
+.research-profile p{margin:0 0 7px}
+.research-topics,.research-expertise{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:26px}
+.current-research-list article{display:grid;grid-template-columns:105px minmax(0,1fr);gap:22px;margin:0 0 15px}
+.current-research-list article:last-child{margin-bottom:0}
+.research-profile .research-date{font-size:11.5px;line-height:1.8;color:var(--muted);margin:0 0 5px}
+.research-inline-links{font-size:12px;white-space:normal;color:var(--accent)}
+.research-inline-links a{white-space:nowrap}
+.research-project-list{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 30px}
+.research-project-list a{font-size:13.5px;font-weight:500;color:var(--accent)}
+.research-project-list p{font-size:11.5px;line-height:1.6;color:var(--muted);margin:3px 0 0}
+.research-background{display:grid;grid-template-columns:1.3fr 1fr;gap:40px}
+.research-education{list-style:none;margin:0;padding:0}
+.research-education li{margin:0 0 17px}
+.research-profile .research-note{font-size:12px;color:var(--muted);line-height:1.65}
+.research-languages{margin:0}
+.research-languages div{margin-bottom:15px}
+.research-languages dt{font-weight:500;font-size:14px;margin-bottom:4px}
+.research-languages dd{margin:0;font-size:13px;line-height:1.7}
+@media(max-width:760px){
+ body[data-page=research] .page-heading h1{font-size:24px}
+ body[data-page=research] .page-intro,.research-profile{font-size:13px}
+ .research-topics,.research-expertise{grid-template-columns:1fr;gap:13px}
+ .research-profile h2{font-size:17px;margin-bottom:12px}
+ .research-profile h3{font-size:13.5px}
+ .research-section{padding:17px 0}
+ .current-research-list article{grid-template-columns:1fr;gap:3px;margin-bottom:17px}
+ .research-project-list{grid-template-columns:1fr;gap:12px}
+ .research-background{grid-template-columns:1fr;gap:0}
+ body:is([data-page=work],[data-page=project]) .article-gallery{max-width:100%;gap:18px}
+ body:is([data-page=work],[data-page=project]) .article-gallery .portrait-image{max-width:330px}
+}
+/* Paragraph-led project introductions, with headings reserved for substantial sections. */
+body:is([data-page=work],[data-page=project]) .project-heading{margin-bottom:17px}
+body:is([data-page=work],[data-page=project]) .project-heading+.article-text{margin-top:0}
+.project-related{display:flex;flex-wrap:wrap;gap:8px 20px;font-size:12px;line-height:1.6;color:var(--accent)}
+/* Selected stills use balanced small-image rows; process galleries stay vertical. */
+body:is([data-page=work],[data-page=project]) .article-gallery.photo-tiles{max-width:780px;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+body:is([data-page=work],[data-page=project]) .article-gallery.photo-tiles .article-image{max-width:none}
+body:is([data-page=work],[data-page=project]) .article-gallery.photo-tiles img{width:100%;height:auto}
+.project-navigation{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:18px;font-size:12px;line-height:1.5;color:var(--accent);padding:12px 0}
+.project-navigation>a{min-height:32px;display:flex;align-items:center}
+.project-navigation>a:last-child{justify-content:flex-end;text-align:right}
+.project-navigation .all-projects{color:var(--muted);text-align:center;justify-content:center}
+.project-navigation-top{border-bottom:1px solid var(--line);margin:0 0 20px}
+.project-navigation-bottom{border-top:1px solid var(--line);margin-top:30px}
+.project-floating-navigation{position:fixed;left:16px;right:16px;top:50%;transform:translateY(-50%);display:flex;justify-content:space-between;z-index:12;pointer-events:none}
+.project-floating-navigation a{pointer-events:auto;display:grid;place-items:center;width:44px;height:60px;background:#ffffffed;border:1px solid var(--line);color:#506371;font-size:22px;box-shadow:0 2px 12px #1b293708}
+.project-floating-navigation a:hover{background:#eef3f6;color:var(--ink)}
+@media(max-width:1199px){.project-floating-navigation{display:none}}
+@media(max-width:760px){
+ .project-navigation{gap:10px;font-size:11.5px;padding:8px 0}
+ .project-navigation>a{min-height:36px}
+ body:is([data-page=work],[data-page=project]) .article-gallery.photo-tiles{gap:12px}
+ body:is([data-page=work],[data-page=project]) .article-gallery.photo-tiles figcaption{font-size:10px}
+}
+
+/* Align manuscripts with published entries without inventing a publication year. */
+body[data-page=publications] .manuscript-entry>div{grid-column:2}

@@ -48,9 +48,9 @@
 
   function workPage(){
     const works=S.workEntries();
-    const count=category=>works.filter(w=>category==='all'||w.category===category).length;
+    const count=category=>works.filter(w=>S.inCategory(w,category)).length;
     const tabs=`<nav class="category-nav" aria-label="${word('Browse by category','按类别浏览作品')}">${d.categories.map(cat=>`<a data-category="${e(cat.id)}" href="${l('works.html'+(cat.id==='all'?'':'?category='+cat.id))}" ${filter===cat.id?'aria-current="page"':''}>${t(cat)} <span>${count(cat.id)}</span></a>`).join('')}</nav>`;
-    const selected=works.filter(w=>filter==='all'||w.category===filter);
+    const selected=works.filter(w=>S.inCategory(w,filter));
     const category=d.categories.find(cat=>cat.id===filter);
     return `${heading(word('Creative Works','艺术作品'),word('Animation, digital media, interactive art, illustration and design.','动画、数字媒体、交互艺术、插画与设计。'))}${tabs}<div id="category-results" aria-live="polite">${filter==='all'?'':`<div class="category-heading"><h2>${t(category)}</h2><span>${selected.length} ${word(selected.length===1?'work':'works','项作品')}</span></div>`}<div class="category-work-grid">${selected.map(w=>S.workWindow(w,lang)).join('')}</div></div>`;
   }

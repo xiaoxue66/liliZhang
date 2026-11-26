@@ -31,6 +31,7 @@
   function highlights(lang){
     return `<div class="highlights-list">${window.PORTFOLIO.highlights.map(item=>`<p>${text(item.text,lang)} <a href="${link(item.page,lang)}">[${text(item.link,lang)}]</a></p>`).join('')}</div>`;
   }
+  const inCategory=(work,category)=>category==='all'||work.category===category||work.categories?.includes(category);
   const workEntries=()=>window.PORTFOLIO.works.map(entry=>entry.projectId?{...window.PORTFOLIO.researchProjects.find(project=>project.id===entry.projectId),...entry}:entry);
-  window.Site={escape,value,text,title,workYear,duration,cardTitle,asset,link,header,footer,workWindow,highlights,workEntries};
+  window.Site={escape,value,text,title,workYear,duration,cardTitle,asset,link,header,footer,workWindow,highlights,inCategory,workEntries};
 })();

@@ -87,6 +87,196 @@ window.PORTFOLIO = {
   },
   "works": [
     {
+      "id": "a-fleeting-jest",
+      "title": "A Fleeting Jest",
+      "titleZh": "笑春风",
+      "year": "2026",
+      "completionYear": "2026",
+      "category": "animation",
+      "categories": [
+        "animation",
+        "generative"
+      ],
+      "medium": {
+        "en": "AI-assisted 2D animation",
+        "zh": "AI 辅助二维动画"
+      },
+      "cardMedium": {
+        "en": "AI-assisted 2D animation",
+        "zh": "AI 辅助二维动画"
+      },
+      "durationSeconds": 114,
+      "image": "assets/fleeting-jest-cover.jpg",
+      "gif": "assets/fleeting-jest-card-motion.webp",
+      "poster": "assets/fleeting-jest-card.jpg",
+      "page": "works/a-fleeting-jest.html",
+      "showSummary": false,
+      "description": {
+        "en": "Inspired by Li Shangyin’s poetry, a mischievous floral spirit turns a banquet with three officials into a whimsical comedy.",
+        "zh": "受李商隐诗歌启发，顽皮花灵与三位古代官员的宴席相遇，演绎出一场奇趣喜剧。"
+      },
+      "blocks": [
+        {
+          "kind": "text",
+          "paragraphs": {
+            "en": [
+              "A Fleeting Jest is an AI-assisted animated short inspired by Mocking the Peach Blossom, a poem by the Tang dynasty poet Li Shangyin.",
+              "The film transforms the playful peach blossom into a mischievous floral spirit whose encounter with three ancient Chinese officials unfolds into a whimsical comedy. Combining traditional Chinese aesthetics, supernatural folklore, and humorous animated performance, the film explores the creative potential of generative AI in reimagining classical Chinese poetry through visual storytelling."
+            ],
+            "zh": [
+              "《笑春风》是一部 AI 辅助二维动画短片，灵感来自唐代诗人李商隐的《嘲桃》。",
+              "影片将诗中顽皮的桃花化为一位爱捉弄人的花灵。她与三位古代中国官员的相遇，展开了一场充满奇趣的喜剧。作品结合中国传统美学、志怪想象与幽默的动画表演，探索生成式人工智能在以视觉叙事重新演绎中国古典诗歌中的创作可能。"
+            ]
+          }
+        },
+        {
+          "kind": "text",
+          "paragraphs": {
+            "en": [
+              "Mischievous peach blossoms, fair and bright,\nBloom east of the open well in morning light.\nThe spring breeze coaxed them into bloom,\nYet now they mock the very breeze of spring."
+            ],
+            "zh": [
+              "无赖夭桃面，平明露井东。春风为开了，却拟笑春风。"
+            ]
+          }
+        },
+        {
+          "kind": "gallery",
+          "heading": {
+            "en": "Film stills",
+            "zh": "影片静帧"
+          },
+          "layout": "grid",
+          "images": [
+            {
+              "src": "assets/fleeting-jest-cover.jpg",
+              "alt": {
+                "en": "A Fleeting Jest — moonlit pavilion and title",
+                "zh": "《笑春风》：月下亭台与片名"
+              }
+            },
+            {
+              "src": "assets/fleeting-jest-still-1.jpg",
+              "alt": {
+                "en": "The floral spirit appears at the banquet",
+                "zh": "花灵现身宴席"
+              }
+            },
+            {
+              "src": "assets/fleeting-jest-still-2.jpg",
+              "alt": {
+                "en": "The floral spirit and three officials at the table",
+                "zh": "花灵与三位官员的宴席"
+              }
+            },
+            {
+              "src": "assets/fleeting-jest-still-3.jpg",
+              "alt": {
+                "en": "Dishes float above the banquet table",
+                "zh": "宴席上飞舞的菜盘"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "gallery",
+          "heading": {
+            "en": "Animation excerpts",
+            "zh": "动画片段"
+          },
+          "layout": "stack",
+          "images": [
+            {
+              "src": "assets/fleeting-jest-motion-a.webp",
+              "alt": {
+                "en": "A Fleeting Jest — animation excerpt 1",
+                "zh": "《笑春风》动画片段 1"
+              }
+            },
+            {
+              "src": "assets/fleeting-jest-motion-b.webp",
+              "alt": {
+                "en": "A Fleeting Jest — animation excerpt 2",
+                "zh": "《笑春风》动画片段 2"
+              }
+            },
+            {
+              "src": "assets/fleeting-jest-motion-c.webp",
+              "alt": {
+                "en": "A Fleeting Jest — animation excerpt 3",
+                "zh": "《笑春风》动画片段 3"
+              }
+            },
+            {
+              "src": "assets/fleeting-jest-motion-d.webp",
+              "alt": {
+                "en": "A Fleeting Jest — animation excerpt 4",
+                "zh": "《笑春风》动画片段 4"
+              }
+            },
+            {
+              "src": "assets/fleeting-jest-motion-e.webp",
+              "alt": {
+                "en": "A Fleeting Jest — animation excerpt 5",
+                "zh": "《笑春风》动画片段 5"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "gallery",
+          "heading": {
+            "en": "Visual development & production",
+            "zh": "视觉开发与制作过程"
+          },
+          "layout": "wide",
+          "images": [
+            {
+              "src": "assets/fleeting-jest-process-1.jpg",
+              "alt": {
+                "en": "Character turnarounds, props and banquet setting in the production workspace",
+                "zh": "制作工作区中的角色转面、道具与宴席场景"
+              },
+              "caption": {
+                "en": "Character, prop and setting development.",
+                "zh": "角色、道具与场景开发。"
+              }
+            },
+            {
+              "src": "assets/fleeting-jest-process-2.jpg",
+              "alt": {
+                "en": "Sequence of shots in the production workspace",
+                "zh": "制作工作区中的镜头序列"
+              },
+              "caption": {
+                "en": "Shot sequence and visual continuity.",
+                "zh": "镜头序列与视觉连贯性。"
+              }
+            },
+            {
+              "src": "assets/fleeting-jest-process-3.jpg",
+              "alt": {
+                "en": "Connections between shots in the production workspace",
+                "zh": "制作工作区中的镜头连接"
+              },
+              "caption": {
+                "en": "Production workspace showing connected shots.",
+                "zh": "展示镜头连接的制作工作区。"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "video",
+          "heading": {
+            "en": "Film",
+            "zh": "影片"
+          },
+          "url": "https://vimeo.com/1250307619?share=copy&fl=sv&fe=ci"
+        }
+      ]
+    },
+    {
       "id": "jin-se",
       "title": "Jin Se",
       "subtitle": {
@@ -3007,6 +3197,62 @@ window.PORTFOLIO = {
     "assets/jin-se-strings.gif": [
       640,
       325
+    ],
+    "assets/fleeting-jest-motion-e.webp": [
+      594,
+      330
+    ],
+    "assets/fleeting-jest-motion-d.webp": [
+      594,
+      330
+    ],
+    "assets/fleeting-jest-motion-c.webp": [
+      594,
+      330
+    ],
+    "assets/fleeting-jest-still-2.jpg": [
+      1800,
+      1013
+    ],
+    "assets/fleeting-jest-still-3.jpg": [
+      1668,
+      943
+    ],
+    "assets/fleeting-jest-cover.jpg": [
+      1800,
+      1013
+    ],
+    "assets/fleeting-jest-still-1.jpg": [
+      1672,
+      941
+    ],
+    "assets/fleeting-jest-motion-b.webp": [
+      594,
+      330
+    ],
+    "assets/fleeting-jest-motion-a.webp": [
+      594,
+      330
+    ],
+    "assets/fleeting-jest-process-1.jpg": [
+      2000,
+      784
+    ],
+    "assets/fleeting-jest-card-motion.webp": [
+      480,
+      267
+    ],
+    "assets/fleeting-jest-process-3.jpg": [
+      438,
+      499
+    ],
+    "assets/fleeting-jest-process-2.jpg": [
+      1040,
+      675
+    ],
+    "assets/fleeting-jest-card.jpg": [
+      594,
+      330
     ]
   },
   "highlights": [
@@ -3552,6 +3798,7 @@ window.PORTFOLIO = {
     }
   ],
   "selectedWorkIds": [
+    "a-fleeting-jest",
     "jin-se",
     "chocolate",
     "like",
@@ -3560,8 +3807,7 @@ window.PORTFOLIO = {
     "waiting-in-vain",
     "landscapes-of-aging",
     "dragon-kings-lament",
-    "breaking-bad",
-    "forging-ahead"
+    "breaking-bad"
   ],
   "backgroundBanner": {
     "src": "assets/jin-se-landscape-motion.webp",

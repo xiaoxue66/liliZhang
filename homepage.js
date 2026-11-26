@@ -79,7 +79,7 @@
   function workSection() {
     const entries=Site.workEntries();
     const selected=data.selectedWorkIds?data.selectedWorkIds.map(id=>entries.find(w=>w.id===id)).filter(Boolean):entries;
-    const works=activeFilter==='all'?selected:entries.filter(w=>w.category===activeFilter);
+    const works=activeFilter==='all'?selected:entries.filter(w=>Site.inCategory(w,activeFilter));
     return `<section id="works" class="works-section section" aria-labelledby="works-heading"><h2 id="works-heading" class="visually-hidden">${ui('worksHeading')}</h2><div class="work-filters" role="group" aria-label="${lang === 'en' ? 'Filter works' : '筛选作品'}">${data.categories.map(cat => `<button type="button" data-filter="${e(cat.id)}" aria-pressed="${activeFilter === cat.id}">${c(cat)}</button>`).join('')}</div><div class="visual-windows">${works.map(workVisual).join('')}</div><p class="touch-help">${lang === 'en' ? 'Hover to explore; select a work to open its project page.' : '悬停查看标题与简介，点击进入项目页面。'} <a href="${Site.link('works.html',lang)}">[${lang==='en'?'View all works':'查看全部作品'}]</a></p></section>`;
   }
 

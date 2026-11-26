@@ -107,8 +107,8 @@ window.PORTFOLIO = {
       },
       "durationSeconds": 114,
       "image": "assets/fleeting-jest-cover.jpg",
-      "gif": "assets/fleeting-jest-card-motion.webp",
-      "poster": "assets/fleeting-jest-card.jpg",
+      "gif": "assets/fleeting-jest-entrance.webp",
+      "poster": "assets/fleeting-jest-entrance-poster.jpg",
       "page": "works/a-fleeting-jest.html",
       "showSummary": false,
       "description": {
@@ -3238,10 +3238,6 @@ window.PORTFOLIO = {
       2000,
       784
     ],
-    "assets/fleeting-jest-card-motion.webp": [
-      480,
-      267
-    ],
     "assets/fleeting-jest-process-3.jpg": [
       438,
       499
@@ -3250,9 +3246,13 @@ window.PORTFOLIO = {
       1040,
       675
     ],
-    "assets/fleeting-jest-card.jpg": [
-      594,
-      330
+    "assets/fleeting-jest-entrance.webp": [
+      480,
+      267
+    ],
+    "assets/fleeting-jest-entrance-poster.jpg": [
+      480,
+      267
     ]
   },
   "highlights": [
